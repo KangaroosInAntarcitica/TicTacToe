@@ -67,14 +67,3 @@ class Board:
             result += '|' + self[i*3] + self[i*3+1] + self[i*3+2] + '|\n'
         result += '+---+'
         return result
-
-
-if __name__ == '__main__':
-    board = Board()
-    board[3] = 'x'
-    board[4] = 'x'
-    board[5] = 'x'
-    board[0] = 'o'
-    board[1] = 'o'
-    print(board.is_won())
-    print(board)
